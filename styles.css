@@ -135,11 +135,15 @@ body {
     outline: none;
 }
 
-.form_item input:invalid {
+.form_item input.error {
     border-color: rgb(219, 97, 97);
 }
 
-.error {
+.form_item input.right {
+    border-color: rgb(132, 235, 128);
+}
+
+.error-msg {
     color: rgb(219, 97, 97);
     font-size: 10px;
 }
@@ -157,6 +161,10 @@ body {
     font-weight: 700;
     font-size: 14px;
     padding: 10px 30px;
+}
+
+.btn:active {
+    background-color: rgb(50, 124, 153);
 }
 
 .column_content-3 p {

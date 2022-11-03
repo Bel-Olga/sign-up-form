@@ -32,7 +32,7 @@
             <div class="column_content-2">
                 <div class="form-container">
                     <p class="text form-text">Let's do this</p>
-                    <form action="" class="form">
+                    <form action="" method="get" class="form">
                         <div class="form_column">
                             <div class="form_item">
                                 <label for="first-name">First name</label>
@@ -44,8 +44,8 @@
                             </div>
                             <div class="form_item">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" id="password" required>
-                                <p class="error">*Password do not match</p>
+                                <input type="password" name="password" id="password" pattern="(?=.*\d)[A-Za-z\d]{8,}" title="Must contain at least 8 characters and at least one number" required>
+                                <p class="error-msg" style="display: none">*Password do not match</p>
                             </div>
                         </div>
                         <div class="form_column">
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="column_content-3">
-                <button class="btn">Create Account</button>
+                <button type="submit" class="btn btn-submit">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
                 
@@ -77,6 +77,6 @@
         </main>
     </div>
     
-    
+    <script src="app.js"></script>
 </body>
 </html>
